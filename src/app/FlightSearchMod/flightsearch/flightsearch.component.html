@@ -1,0 +1,146 @@
+
+<div class="container">
+
+  <div class="row">
+<div class="col-md-4">
+    <ul class="nav nav-tabs">
+        <li><a href="#oneway" data-toggle="tab">One Way</a></li>
+        <li><a href="#return" data-toggle="tab">Return</a></li>
+       
+     </ul>
+     <div class ="form-shadow">
+     <div class="tab-content">
+        <div class="tab-pane active" id="oneway"><div >
+           <form (ngSubmit)="submitQuery1(userForm)" #userForm="ngForm" >
+            <div class="form-group">
+                <label class="input-name" for="originCity">Origin City:</label>
+              <input type="text" [(ngModel)]="user.originCity"  required name="originCity" id="originCity" placeholder="Enter Origin City"><br>
+            </div>
+            <div class="form-group">
+             
+                <label class="input-name"for="destinationCity">Destination City:</label>
+              <input type="text" [(ngModel)]="user.destinationCity" required  name="destinationCity" id="destinationCity" placeholder="Enter Destination City"><br>
+            </div>
+            <div class="form-group">
+                <label class="input-name" for="departureDate">Departure Date:</label>
+              <input type="date" [(ngModel)]="user.departureDate"  required name="departureDate" id="departureDate" placeholder="Departure Date"><br>
+            </div>
+            <div class="form-group">
+              <label class="input-name" for="passengers">Passengers:</label>
+                    <select  [(ngModel)]="user.count"  required name="departuredate" id="passengers" required>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
+                      <option value="13">13</option>
+                      <option value="14">14</option>
+                      <option value="15">15</option>
+                    </select>
+            </div>
+            
+            <button class="btn btn-primary">Submit</button>
+          </form></div> </div>
+        <div class="tab-pane" id="return"><div class ="form-shadow"> 
+          <form (ngSubmit)="submitQuery2(userForm)" #userForm="ngForm" >
+            <div class="form-group">
+                <label class="input-name" for="originCity">Origin City:</label>
+              <input type="text" [(ngModel)]="user.originCity" name="originCity" id="originCity" placeholder="Enter Origin City"><br>
+            </div>
+            <div class="form-group">
+             
+                <label class="input-name"for="destinationCity">Destination City:</label>
+              <input type="text" [(ngModel)]="user.destinationCity"  name="destinationCity" id="destinationCity" placeholder="Enter Destination City"><br>
+            </div>
+            <div class="form-group">
+                <label class="input-name" for="departureDate">Departure Date:</label>
+              <input type="date" [(ngModel)]="user.departureDate"  name="departureDate" id="departureDate" placeholder="Departure Date"><br>
+            </div>
+            <div class="form-group">
+                <label class="input-name" for="returnDate">Return Date:</label>
+              <input type="date" [(ngModel)]="user.returnDate"  name="returnDate" id="returnDate" placeholder="Return Date"><br>
+            </div>
+            <div class="form-group">
+              <label class="input-name" for="passengers">Passengers:</label>
+                    <select  [(ngModel)]="user.count"  name="departuredate" id="passengers" required>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                      <option value="11">11</option>
+                      <option value="12">12</option>
+                      <option value="13">13</option>
+                      <option value="14">14</option>
+                      <option value="15">15</option>
+                    </select>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Submit</button><br>
+
+            
+          </form></div>
+         </div><br><br>
+        
+       
+     </div>
+    </div>
+    
+     
+    
+   
+
+  </div>
+  
+  <div class="col-md-8"> 
+    <div  class="container">
+        <ul class="list-group">
+            <li  *ngFor="let flight of flights" class="list-group-item" >
+              <div class="row">
+                <div class="col-xs-12 col-sm-4">
+                    <div class="card">
+                        <div class="card-content">
+                            <h4 class="card-title">{{user.originCity}} > {{user.destinationCity}}</h4>
+                            <div class="">
+                                <span>{{flight.flightName}}</span>
+                                <span>{{flight.date}}</span>
+                                <span>{{flight.flightRate}}</span>
+                                <span>{{flight.from}}</span>
+                                <span>{{flight.to}}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+      </li></ul>
+    </div>
+    </div>
+    </div>
+    </div>
+  
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
