@@ -6,8 +6,24 @@
   </h1>
 
   <br>  <br>  <br>
-  <div>
-  <app-search></app-search>
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-4">
+          <app-flightsearch (fetchFlightEmitter)="passData($event)" (priceRangeEmitter)="passRange($event)">
+
+
+          
+          </app-flightsearch>
+      </div>
+
+      <div class="col-md-8"> 
+          <app-flightview [userForm]=searchForm [refineRange]=sliderRange ></app-flightview>
+      </div>
+
+    </div>
   </div>
+
+  
 
   </div>

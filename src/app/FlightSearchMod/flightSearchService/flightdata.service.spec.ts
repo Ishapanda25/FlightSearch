@@ -18,11 +18,6 @@ describe('FlightdataService', () => {
     expect(service).toBeTruthy();
   }));
 
-  it('retrieves all the values', inject( [FlightdataService], ( searchService ) => {
-    return searchService.fetchDetails().then( (result) => {         
-       expect(result.length).toBeGreaterThan(0);
-    } );       
-  }) );
 
 
 

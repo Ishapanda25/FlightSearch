@@ -1,0 +1,68 @@
+<div *ngIf="!returnDate"  class="container">
+  <ul class="list-group list-group-flush">
+      <li   *ngFor="let flight of flights" class="list-group-item" >
+        <div  *ngIf="flight.flightRate<refineRange" class="row">
+          <div class="col-xs-12 col-sm-4">
+              <div class="card">
+                  <div class="card-content">
+                      <p class="card-title">{{originCity}} > {{destinationCity}}</p>
+                      <div>
+                          <h4> <p>{{flight.flightName}}</p></h4>
+                          <p class="textstyle"> Date: {{displayDDate}}
+                               </p>
+                          <p class="textstyle">Price: {{flight.flightRate}}</p>
+                          <p> <button class="btn btn-primary">Book</button></p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+     </li>
+     
+</ul>
+</div>
+<div *ngIf="returnDate" class="container">
+<ul class="list-group">
+    <li   *ngFor="let flight of flights" class="list-group-item" >
+      <div  *ngIf="flight.flightRate<refineRange" class="row">
+        <div *ngIf="flight.from==originCity" class="col-xs-6 col-sm-4">
+            <div class="card">
+                <div  class="card-content">
+                        <p class="card-title">{{originCity}} > {{destinationCity}} </p>
+                        <div>
+                            <h4> <p>{{flight.flightName}}</p></h4>
+                            <p class="textstyle"> Departure Date: {{displayDDate}}
+                                 </p>
+                                 <p class="textstyle"> Return Date: {{displayRDate}}
+                                    </p>
+                            <p class="textstyle">Price: {{flight.flightRate}}</p>
+                            <p> <button class="btn btn-primary">Book</button></p>
+                        </div>
+                </div>
+          
+            </div>
+            </div>
+            <div *ngIf="flight.to==originCity" class="col-xs-6 col-sm-4">
+                    <div class="card">
+                        <div  class="card-content">
+                                <p class="card-title">{{destinationCity}} > {{originCity}} </p>
+                                <div>
+                                    <h4> <p>{{flight.flightName}}</p></h4>
+                                    <p class="textstyle"> Departure Date: {{displayDDate}}
+                                         </p>
+                                         <p class="textstyle"> Return Date: {{displayRDate}}
+                                            </p>
+                                    <p class="textstyle">Price: {{flight.flightRate}}</p>
+                                    <p> <button class="btn btn-primary">Book</button></p>
+                                </div>
+                        </div>
+                  
+                    </div>
+                </div>
+        
+    </div>
+   </li>
+   
+</ul>
+</div>
+

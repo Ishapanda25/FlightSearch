@@ -4,7 +4,7 @@ import { FlightsearchComponent } from './flightsearch.component';
 
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-
+import { FlightviewComponent } from 'C:/Users/isha.panda/MyApp/src/app/FlightSearchMod/flightview/flightview.component';
 import { FlightdataService } from 'C:/Users/isha.panda/MyApp/src/app/FlightSearchMod/flightSearchService/flightdata.service';
 
 describe('FlightsearchComponent', () => {

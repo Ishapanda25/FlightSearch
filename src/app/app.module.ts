@@ -6,10 +6,10 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { FlightsearchComponent } from './FlightSearchMod/flightsearch/flightsearch.component';
-import { PriceFilterComponent } from 'C:/Users/isha.panda/MyApp/src/app/FlightSearchMod/price-filter/price-filter.component';
-import { FlightdataService } from './FlightSearchMod/flightSearchService/flightdata.service';
-import { PriceFilterPipe } from './FlightSearchMod/price-filter/price-filter.pipe';
 
+import { FlightdataService } from './FlightSearchMod/flightSearchService/flightdata.service';
+
+import { FlightviewComponent } from 'C:/Users/isha.panda/MyApp/src/app/FlightSearchMod/flightview/flightview.component';
 
 
 
@@ -18,12 +18,8 @@ import { PriceFilterPipe } from './FlightSearchMod/price-filter/price-filter.pip
   declarations: [
     AppComponent,
     FlightsearchComponent,
-    PriceFilterPipe,
-    PriceFilterComponent
-
- 
     
-   
+    FlightviewComponent
   ],
   imports: [
     BrowserModule,

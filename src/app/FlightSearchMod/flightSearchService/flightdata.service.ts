@@ -15,14 +15,14 @@ export class FlightdataService {
 
 
   constructor (private http: Http) {}
-  fetchDetails(userForm : NgForm): 
+  fetchDetails1(userForm : NgForm): 
             Observable<FlightResults[]> {
               let myHeaders = new Headers();
 	myHeaders.append('Content-Type', 'application/json');    
 	let myParams = new URLSearchParams();
   myParams.append('from', userForm.controls['originCity'].value);
- 
   myParams.append('to', userForm.controls['destinationCity'].value);
+ // myParams.append('flightRate', refineRange);
         let options = new RequestOptions({ headers: myHeaders, params: myParams });
               return this.http.get("http://localhost:3000/flights", options)
                               .map(this.setData)
@@ -45,6 +45,7 @@ let options = new RequestOptions({ headers: myHeaders, params: myParams });
 }
     public setData(res:Response) {
      let results = res.json();
+   
      return results;
      
   }

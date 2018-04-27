@@ -4,12 +4,13 @@ import { FlightsearchComponent } from './FlightSearchMod/flightsearch/flightsear
 import { NgForm } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { FlightviewComponent } from 'C:/Users/isha.panda/MyApp/src/app/FlightSearchMod/flightview/flightview.component';
 import { FlightdataService } from 'C:/Users/isha.panda/MyApp/src/app/FlightSearchMod/flightSearchService/flightdata.service';
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent,FlightsearchComponent
+        AppComponent,FlightsearchComponent,FlightviewComponent
       ],
       imports:[FormsModule,HttpModule],
       providers: [FlightdataService],

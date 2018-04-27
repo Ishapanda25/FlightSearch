@@ -8,7 +8,7 @@
     "departureTime": "02:30pm",
     "arrivalTime": "03:30pm",
     "date": "03/20/2018",
-    "flightRate": "1500 INR"
+    "flightRate": "1500"
   },
   {
     "id": 1,
@@ -18,7 +18,7 @@
     "departureTime": "02:30pm",
     "arrivalTime": "03:30pm",
     "date": "03/21/2018",
-    "flightRate": "1500 INR"
+    "flightRate": "1500"
   },
   
   {
@@ -29,7 +29,7 @@
     "departureTime": "02:30pm",
     "arrivalTime": "03:30pm",
     "date": "03/20/2018",
-    "flightRate": "1500 INR"
+    "flightRate": "1500"
   },
   {
     "id": 17,
@@ -39,7 +39,7 @@
     "departureTime": "02:30pm",
     "arrivalTime": "03:30pm",
     "date": "03/21/2018",
-    "flightRate": "1500 INR"
+    "flightRate": "1500"
   },
   {
     "id": 2,
@@ -49,7 +49,7 @@
     "departureTime": "02:05pm",
     "arrivalTime": "03:50am",
     "date": "17/03/2018",
-    "flightRate": "12696 INR"
+    "flightRate": "12696"
   },
   {
     "id": 3,
@@ -59,7 +59,7 @@
     "departureTime": "12:55pm",
     "arrivalTime": "08:15am",
     "date": "17/03/2018",
-    "flightRate": "24135 INR"
+    "flightRate": "19135"
   },
   {
     "id": 4,
@@ -69,7 +69,7 @@
     "departureTime": "11:40pm",
     "arrivalTime": "10:15am",
     "date": "17/03/2018",
-    "flightRate": "33909 INR"
+    "flightRate": "19909"
   },
   {
     "id": 18,
@@ -79,7 +79,7 @@
     "departureTime": "11:40pm",
     "arrivalTime": "10:15am",
     "date": "18/03/2018",
-    "flightRate": "33909 INR"
+    "flightRate": "19909"
   },
   {
     "id": 5,
@@ -89,7 +89,7 @@
     "departureTime": "05:10am",
     "arrivalTime": "07:15am",
     "date": "29/03/2018",
-    "flightRate": "2823 INR"
+    "flightRate": "2823"
   },
   {
     "id": 19,
@@ -99,7 +99,7 @@
     "departureTime": "05:10am",
     "arrivalTime": "07:15am",
     "date": "20/03/2018",
-    "flightRate": "2823 INR"
+    "flightRate": "2823"
   },
   {
     "id": 6,
@@ -109,7 +109,7 @@
     "departureTime": "03:15am",
     "arrivalTime": "05:00am",
     "date": "07/27/2018",
-    "flightRate": "2948 INR"
+    "flightRate": "2948"
   },
   {
     "id": 22,
@@ -119,7 +119,7 @@
     "departureTime": "03:15am",
     "arrivalTime": "05:00am",
     "date": "07/27/2018",
-    "flightRate": "2948 INR"
+    "flightRate": "2948"
   },
   {
     "id": 20,
@@ -129,7 +129,7 @@
     "departureTime": "03:15am",
     "arrivalTime": "05:00am",
     "date": "07/27/2018",
-    "flightRate": "2948 INR"
+    "flightRate": "2948"
   },
   {
     "id": 21,
@@ -139,7 +139,7 @@
     "departureTime": "03:15am",
     "arrivalTime": "05:00am",
     "date": "07/27/2018",
-    "flightRate": "2948 INR"
+    "flightRate": "2948"
   },
 
 
@@ -152,7 +152,7 @@
     "departureTime": "04:20am",
     "arrivalTime": "07:50am",
     "date": "12/05/2018",
-    "flightRate": "2049 INR"
+    "flightRate": "2049"
   },
   {
     "id": 11,
@@ -162,7 +162,7 @@
     "departureTime": "02:30pm",
     "arrivalTime": "03:00pm",
     "date": "03/20/2018",
-    "flightRate": "1700 INR"
+    "flightRate": "1700"
   },
   {
     "id": 12,
@@ -172,7 +172,7 @@
     "departureTime": "02:15pm",
     "arrivalTime": "04:00am",
     "date": "17/03/2018",
-    "flightRate": "12096 INR"
+    "flightRate": "12096"
   },
   {
     "id": 13,
@@ -183,7 +183,7 @@
     "arrivalTime": "05:15am",
     "date": "17/03/2018",
     
-    "flightRate": "24035 INR"
+    "flightRate": "18035"
   },
 
   {
@@ -194,7 +194,7 @@
     "departureTime": "05:30am",
     "arrivalTime": "07:45am",
     "date": "29/03/2018",
-    "flightRate": "3823 INR"
+    "flightRate": "3823"
   }
 ]
 }
